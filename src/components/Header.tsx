@@ -31,10 +31,11 @@ export function Header() {
   }, []);
 
   const navItems = [
-    { label: "Início", href: "#inicio" },
-    { label: "Sobre", href: "#sobre" },
-    { label: "Soluções", href: "#solucoes" },
-    { label: "Contato", href: "#contato" },
+    { label: "Início", href: "#inicio", external: false },
+    { label: "Sobre", href: "#sobre", external: false },
+    { label: "Soluções", href: "#solucoes", external: false },
+    { label: "Marketing", href: "https://www.flynna.marketing", external: true },
+    { label: "Contato", href: "#contato", external: false },
   ];
 
   return (
@@ -63,15 +64,18 @@ export function Header() {
                 <motion.a
                   key={item.href}
                   href={item.href}
+                  {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
                   className="text-gray-600 hover:flynna-text-sky transition-colors cursor-pointer relative group"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.querySelector(item.href);
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
+                    if (!item.external) {
+                      e.preventDefault();
+                      const element = document.querySelector(item.href);
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
                     }
                   }}
                 >
@@ -149,15 +153,20 @@ export function Header() {
             <motion.a
               key={item.href}
               href={item.href}
+              {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
               className="text-2xl font-semibold text-gray-900 hover:flynna-text-sky transition-colors"
               initial={{ opacity: 0, x: 50 }}
               animate={isOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
               transition={{ delay: index * 0.1 }}
               onClick={(e) => {
-                e.preventDefault();
-                const element = document.querySelector(item.href);
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
+                if (!item.external) {
+                  e.preventDefault();
+                  const element = document.querySelector(item.href);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    setIsOpen(false);
+                  }
+                } else {
                   setIsOpen(false);
                 }
               }}
