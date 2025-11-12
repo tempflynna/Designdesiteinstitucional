@@ -199,7 +199,7 @@ export function ContactSection() {
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                       <Button 
                         type="submit"
-                        className="w-full text-white h-12 rounded-lg shadow-lg hover:shadow-xl flynna-gradient-bg relative overflow-hidden group"
+                        className="cursor-pointer w-full text-white h-12 rounded-lg shadow-lg hover:shadow-xl flynna-gradient-bg relative overflow-hidden group"
                       >
                         <span className="relative z-10">Enviar mensagem</span>
                         <motion.div

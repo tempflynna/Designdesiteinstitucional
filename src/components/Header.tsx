@@ -35,7 +35,7 @@ export function Header() {
     { label: "Sobre", href: "#sobre", external: false },
     { label: "Soluções", href: "#solucoes", external: false },
     { label: "Marketing", href: "https://www.flynna.marketing", external: true },
-    { label: "Contato", href: "#contato", external: false },
+    // { label: "Contato", href: "#contato", external: false },
   ];
 
   return (
@@ -54,7 +54,7 @@ export function Header() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-            >
+                          >
               <FLynnaLogo showByline={false} size="lg" />
             </motion.div>
 
@@ -92,7 +92,7 @@ export function Header() {
                 className="flex items-center gap-3"
               >
                 <Button 
-                  className="text-white px-6 py-2 rounded-lg transition-all transform hover:scale-105 flynna-gradient-bg relative overflow-hidden group"
+                  className="cursor-pointer text-white px-6 py-2 rounded-lg transition-all transform hover:scale-105 flynna-gradient-bg relative overflow-hidden group"
                 >
                   <span className="relative z-10">Fale Conosco</span>
                   <motion.div

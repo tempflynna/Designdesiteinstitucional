@@ -14,12 +14,15 @@ export function FLynnaLogo({ className = "", showByline = true, size = 'md' }: F
   };
 
   return (
-    <div className={`flex items-center ${className}`}>
-      <img 
+    <a href="#inicio" className={`flex items-center ${className}`} onClick={(e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }}>
+      <img
         src={flynnaofficialLogo}
         alt="Flynna - By AllOnline"
         className={`${sizeClasses[size]} w-auto object-contain`}
       />
-    </div>
+    </a>
   );
 }

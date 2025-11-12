@@ -232,7 +232,7 @@ export function ValuesSection() {
             Pronto para transformar sua visão em realidade?
           </p>
           <motion.button 
-            className="text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl flynna-gradient-bg relative overflow-hidden group"
+            className="cursor-pointer text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl flynna-gradient-bg relative overflow-hidden group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
