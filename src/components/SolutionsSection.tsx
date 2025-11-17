@@ -169,7 +169,7 @@ export function SolutionsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <motion.button 
+          {/* <motion.button 
             className="text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl flynna-gradient-bg relative overflow-hidden group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
@@ -181,7 +181,7 @@ export function SolutionsSection() {
               whileHover={{ x: "100%" }}
               transition={{ duration: 0.6 }}
             />
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
     </section>

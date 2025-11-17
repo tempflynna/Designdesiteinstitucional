@@ -1,7 +1,7 @@
 
-  # Design de Site Institucional
+  # Initial Landing Page Design - Flynna
 
-  This is a code bundle for Design de Site Institucional. The original project is available at https://www.figma.com/design/E6B6j77KUyGTGk02XOvVik/Design-de-Site-Institucional.
+  This is the initial landing page for Flynna.
 
   ## Running the code
 

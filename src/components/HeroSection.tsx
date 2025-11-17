@@ -124,7 +124,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
             >
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button 
+                {/* <Button 
                   size="lg"
                   className="text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl flynna-gradient-bg relative overflow-hidden group"
                 >
@@ -135,16 +135,16 @@ export function HeroSection() {
                     whileHover={{ x: "100%" }}
                     transition={{ duration: 0.6 }}
                   />
-                </Button>
+                </Button> */}
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button 
+                {/* <Button 
                   variant="outline" 
                   size="lg"
                   className="border-2 px-8 py-4 rounded-lg flynna-border-sky flynna-text-navy flynna-button-hover"
                 >
                   Saiba mais sobre nós
-                </Button>
+                </Button> */}
               </motion.div>
             </motion.div>
           </div>
