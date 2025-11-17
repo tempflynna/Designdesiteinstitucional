@@ -114,7 +114,7 @@ export function SolutionsSection() {
                 <motion.div
                   whileHover={{ y: -8 }}
                   transition={{ duration: 0.3 }}
-                  className="space-y-6"
+                  className="space-y-6 h-full flex flex-col justify-between"
                 >
                   {/* Icon with tech border */}
                   <div className="relative inline-block">

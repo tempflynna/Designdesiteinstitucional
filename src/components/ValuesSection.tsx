@@ -166,7 +166,7 @@ export function ValuesSection() {
                 y: -10,
                 transition: { duration: 0.3 }
               }}
-              className="group text-center space-y-6 p-8 rounded-2xl border border-gray-100 hover:border-[#1CB6D9]/30 bg-white relative overflow-hidden transition-all duration-300"
+              className="group text-center rounded-2xl border border-gray-100 hover:border-[#1CB6D9]/30 relative overflow-hidden transition-all duration-300"
               style={{
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)',
               }}
@@ -177,12 +177,11 @@ export function ValuesSection() {
               <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-[#2BAEC8]/0 group-hover:border-[#2BAEC8] transition-colors duration-300" />
               <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-[#6FE785]/0 group-hover:border-[#6FE785] transition-colors duration-300" />
               
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1CB6D9]/0 via-transparent to-[#53D29D]/0 group-hover:from-[#1CB6D9]/5 group-hover:to-[#53D29D]/5 transition-all duration-300" />
-              
-              {/* Icon */}
-              <motion.div 
-                className="mx-auto w-20 h-20 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#1CB6D9]/10 to-[#53D29D]/10 flynna-text-sky border border-[#1CB6D9]/20 relative z-10"
+              <div className="relative bg-white p-8 rounded-2xl overflow-hidden transition-shadow duration-300 group-hover:shadow-[0_8px_30px_rgba(28,182,217,0.06)] group-hover:shadow-black/5">
+
+                {/* Icon */}
+                <motion.div 
+                  className="mx-auto w-20 h-20 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#1CB6D9]/10 to-[#53D29D]/10 flynna-text-sky border border-[#1CB6D9]/20 relative z-10"
                 whileHover={{ 
                   scale: 1.15,
                   rotate: [0, -10, 10, 0],
@@ -196,8 +195,8 @@ export function ValuesSection() {
                 <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-[#1CB6D9]" />
               </motion.div>
 
-              {/* Content */}
-              <div className="space-y-4 relative z-10">
+                {/* Content */}
+                <div className="space-y-4 relative z-10">
                 <motion.h3 
                   className="text-xl font-bold text-gray-900"
                   whileHover={{
@@ -215,6 +214,7 @@ export function ValuesSection() {
                 {/* Tech accent line */}
                 <div className="pt-2 flex justify-center">
                   <div className="h-[2px] w-16 bg-gradient-to-r from-transparent via-[#1CB6D9] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
                 </div>
               </div>
             </motion.div>

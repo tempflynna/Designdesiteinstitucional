@@ -11,7 +11,7 @@ interface TechCardProps {
 export function TechCard({ children, className = "", glowColor = "#1CB6D9", delay = 0 }: TechCardProps) {
   return (
     <motion.div
-      className={`relative group ${className}`}
+      className={`relative group h-full ${className}`}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -48,7 +48,7 @@ export function TechCard({ children, className = "", glowColor = "#1CB6D9", dela
       />
       
       {/* Content */}
-      <div className="relative bg-white rounded-2xl p-8 border border-gray-100 group-hover:border-transparent transition-colors duration-300">
+      <div className="relative bg-white rounded-2xl p-8 border border-gray-100 group-hover:border-transparent transition-colors duration-300 flex flex-col h-full">
         {children}
       </div>
     </motion.div>
