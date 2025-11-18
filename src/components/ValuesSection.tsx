@@ -123,9 +123,9 @@ export function ValuesSection() {
                   backgroundSize: "200% 200%"
                 }}
               >
-                destino
+                destino 
               </motion.span>
-              e sim{" "}
+              , é{" "}
               <motion.span 
                 className="flynna-gradient-text inline-block"
                 animate={{
