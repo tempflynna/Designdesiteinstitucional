@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white relative overflow-hidden">
+    <div className="min-h-screen bg-white relative">
       {/* Background branco com grid (inicial) */}
       <AnimatedBackground />
       
